@@ -16,7 +16,7 @@
 1. **Клонируйте репозиторий**:
 
 ```bash
-git clone https://github.com/fe-side/vue-test.git
+git clone https://github.com/daATva/vue-test.git
 cd vue-test
 ```
 
