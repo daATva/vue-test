@@ -1,0 +1,120 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+
+  p {
+    margin: 0;
+    color: #666;
+  }
+
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+
+    button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #42b983;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken(#42b983, 10%);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    p {
+      margin: 0 10px;
+    }
+  }
+}
+
+.checkout-button {
+  padding: 10px 20px;
+  background-color: #42b983;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken(#42b983, 10%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.total-items,
+.total-price {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+.buy-cart {
+  padding: 10px 20px;
+  background-color: #42b983;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+
+  &:hover {
+    background-color: #368f6a;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.remove-cart {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0 20px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #ff6347;
+  }
+}
